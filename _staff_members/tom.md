@@ -14,12 +14,15 @@ items-test4:
   - test
 _array_structures:
   items:
+    style: modal
     values:
       - label: Pizza
+        description: Yummy Pizza
         icon: local_pizza
         value:
           topping: "Pepperoni"
-_comments:
-  title: "This is the title"
-  items: "These are the items"
+      - label: Pasta
+        icon: nature_people
+        value:
+          filling: "Pepperoni"
 ---
