@@ -21,8 +21,14 @@ _array_structures:
         icon: local_pizza
         value:
           topping: "Pepperoni"
+        tags:
+          - Bread
+          - Sauce
       - label: Pasta
         icon: nature_people
         value:
           filling: "Pepperoni"
+        tags:
+          - Noodle
+          - Sauce
 ---
