@@ -1,0 +1,43 @@
+{
+  "headers": [
+    {
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "match": "/about/"
+    },
+    {
+      "headers": [
+        {
+          "name": "Something",
+          "value": "true"
+        }
+      ],
+      "match": ".*"
+    }
+  ],
+  "routes": [
+    {
+      "from": "/news/(.*)",
+      "to": "/prefix/$1/$1/suffix"
+    },
+    {
+      "from": "/303/",
+      "status": 303,
+      "to": "/"
+    },
+    {
+      "from": "/307/",
+      "status": 307,
+      "to": "/"
+    },
+    {
+      "from": "/302/",
+      "status": 302,
+      "to": "/"
+    }
+  ]
+}
